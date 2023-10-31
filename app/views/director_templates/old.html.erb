@@ -1,0 +1,6 @@
+
+<% oldest_director = Director.order(:dob).first %>
+
+<p>
+<%=oldest_director.name%><br>
+</p>

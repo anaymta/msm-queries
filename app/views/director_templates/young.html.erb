@@ -1,0 +1,8 @@
+<h1>Youngest Director</h1>
+
+<% youngest_director = Director.order(dob: :desc).first %>
+
+<p>
+  Name: <%= youngest_director.name %><br>
+  Date of Birth: <%= youngest_director.dob %>
+</p>
